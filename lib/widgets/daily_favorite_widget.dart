@@ -1,4 +1,3 @@
-import 'dart:math';
 import '../models/product.dart';
 
 import 'package:flutter/material.dart';
@@ -14,10 +13,21 @@ class DailyFavorite extends StatelessWidget {
       return product.productId == productId;
     });
     return Container(
-      margin: EdgeInsets.all(20),
-      height: 500,
+      color: Color.fromRGBO(216, 201, 155, 1),
+      padding: EdgeInsets.all(20),
       child: Column(
         children: [
+          Text(
+            "Today's Featured Item",
+            style: TextStyle(
+              fontFamily: 'Sansita Swashed',
+              fontSize: 28,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
           Container(
             height: 200,
             alignment: Alignment.center,
@@ -28,20 +38,17 @@ class DailyFavorite extends StatelessWidget {
               elevation: 5,
               child: Row(
                 children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(20),
-                      topRight: Radius.circular(20),
-                    ),
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(20),
-                      bottomLeft: Radius.circular(20),
-                    ),
-                    child: Image.network(
-                      featuredProduct.favoritePictureURL,
-                      fit: BoxFit.cover,
+                  Container(
+                    width: 150,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(20),
+                        bottomLeft: Radius.circular(20),
+                      ),
+                      child: Image.network(
+                        featuredProduct.favoritePictureURL,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                   Expanded(
@@ -50,27 +57,39 @@ class DailyFavorite extends StatelessWidget {
                         vertical: 20,
                         horizontal: 10,
                       ),
-                      child: Column(children: [
-                        Container(
-                          width: MediaQuery.of(context).size.width * 0.4,
-                          child: Text(
-                            featuredProduct.productName,
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18,
-                            ),
+                      child: Stack(
+                        children: [
+                          Column(
+                            children: [
+                              Container(
+                                width: MediaQuery.of(context).size.width * 0.4,
+                                child: Text(
+                                  featuredProduct.productName,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Container(
+                                width: MediaQuery.of(context).size.width * 0.4,
+                                child: Text(
+                                  featuredProduct.productDescription,
+                                ),
+                              ),
+                            ],
                           ),
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Container(
-                          width: MediaQuery.of(context).size.width * 0.4,
-                          child: Text(
-                            featuredProduct.productDescription,
-                          ),
-                        ),
-                      ]),
+                          Positioned(
+                            child: Text(
+                                "\$${featuredProduct.productPrice.round()}"),
+                            bottom: 0,
+                            right: 10,
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ],
@@ -80,7 +99,7 @@ class DailyFavorite extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          Text('This is a short description of the item.'),
+          Text('Come back every day to see our featured item!'),
         ],
       ),
     );

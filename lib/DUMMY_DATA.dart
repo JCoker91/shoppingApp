@@ -11,7 +11,7 @@ const DUMMY_PRODUCTS = const [
       'https://images.unsplash.com/photo-1554568218-0f1715e72254?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fGNsb3RoZXN8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60',
     ],
     productPrice: 25.00,
-    category: "T-Shirt",
+    category: categoryType.TShirt,
   ),
   const Product(
     favoritePictureURL:
@@ -23,7 +23,7 @@ const DUMMY_PRODUCTS = const [
       'https://images.unsplash.com/photo-1572804013427-4d7ca7268217?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoZXN8ZW58MHwxfDB8&auto=format&fit=crop&w=500&q=60',
     ],
     productPrice: 55.00,
-    category: "Dress",
+    category: categoryType.Dress,
   ),
   const Product(
     favoritePictureURL:
@@ -35,6 +35,143 @@ const DUMMY_PRODUCTS = const [
       'https://images.unsplash.com/photo-1503341504253-dff4815485f1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHwxfDB8&auto=format&fit=crop&w=500&q=60',
     ],
     productPrice: 5.00,
-    category: "T-Shirt",
+    category: categoryType.TShirt,
+  ),
+  const Product(
+    favoritePictureURL:
+        'https://images.unsplash.com/photo-1550639525-c97d455acf70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=734&q=8010',
+    productDescription:
+        "A black dress with a high collar to hide hickeys probably.",
+    productId: 4,
+    productName: "Black Dress",
+    productPictureURLs: [
+      'https://images.unsplash.com/photo-1550639525-c97d455acf70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=734&q=80',
+    ],
+    productPrice: 70.00,
+    category: categoryType.Dress,
+  ),
+  const Product(
+    favoritePictureURL:
+        'https://images.unsplash.com/photo-1534534665817-8493579d3fde?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8ZHJlc3N8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60',
+    productDescription:
+        "This dress is great for wearing when you are looking for a dress to wear.",
+    productId: 5,
+    productName: "Dress with Flowers I Think",
+    productPictureURLs: [
+      'https://images.unsplash.com/photo-1534534665817-8493579d3fde?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8ZHJlc3N8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60',
+    ],
+    productPrice: 35.00,
+    category: categoryType.Dress,
+  ),
+  const Product(
+    favoritePictureURL:
+        'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8ZHJlc3N8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60',
+    productDescription: "This dress would be perfect for Speghetti night.",
+    productId: 6,
+    productName: "White Dress",
+    productPictureURLs: [
+      'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8ZHJlc3N8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60',
+    ],
+    productPrice: 20.00,
+    category: categoryType.Dress,
+  ),
+  const Product(
+    favoritePictureURL:
+        'https://images.unsplash.com/photo-1576350591619-5f0841c6cab5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjN8fGRyZXNzfGVufDB8fDB8&auto=format&fit=crop&w=800&q=60',
+    productDescription: "This dress looks like it could reflect the sun!",
+    productId: 7,
+    productName: "Pink Dress",
+    productPictureURLs: [
+      'https://images.unsplash.com/photo-1576350591619-5f0841c6cab5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjN8fGRyZXNzfGVufDB8fDB8&auto=format&fit=crop&w=800&q=60',
+    ],
+    productPrice: 45.00,
+    category: categoryType.Dress,
+  ),
+  const Product(
+    favoritePictureURL:
+        'https://images.unsplash.com/photo-1583744946564-b52ac1c389c8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8dCUyMHNoaXJ0fGVufDB8fDB8&auto=format&fit=crop&w=800&q=60',
+    productDescription:
+        "While wearing this shirt, you are guaranteed to look mega confused all the time!",
+    productId: 8,
+    productName: "Black Shirt with Writing",
+    productPictureURLs: [
+      'https://images.unsplash.com/photo-1583744946564-b52ac1c389c8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8dCUyMHNoaXJ0fGVufDB8fDB8&auto=format&fit=crop&w=800&q=60',
+    ],
+    productPrice: 7.00,
+    category: categoryType.TShirt,
+  ),
+  const Product(
+    favoritePictureURL:
+        'https://images.unsplash.com/photo-1565907961206-11d705ede213?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fHQlMjBzaGlydHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=800&q=60',
+    productDescription: "Made by sound guys, for sound guys.",
+    productId: 9,
+    productName: "Sound Guy Shirt",
+    productPictureURLs: [
+      'https://images.unsplash.com/photo-1565907961206-11d705ede213?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fHQlMjBzaGlydHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=800&q=60',
+    ],
+    productPrice: 4.00,
+    category: categoryType.TShirt,
+  ),
+  const Product(
+    favoritePictureURL:
+        'https://images.unsplash.com/photo-1578237421804-9674940e8b8e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fHRzaGlydHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=800&q=60',
+    productDescription: "You must have 3+ tatoos to order this.",
+    productId: 10,
+    productName: "Tatoo T-Shirt",
+    productPictureURLs: [
+      'https://images.unsplash.com/photo-1578237421804-9674940e8b8e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fHRzaGlydHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=800&q=60',
+    ],
+    productPrice: 5.00,
+    category: categoryType.TShirt,
+  ),
+  const Product(
+    favoritePictureURL:
+        'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8amVhbnN8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60',
+    productDescription:
+        "These pants prove that it is still cool to add patches to your clothes..",
+    productId: 11,
+    productName: "Hipster Pants",
+    productPictureURLs: [
+      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8amVhbnN8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60',
+    ],
+    productPrice: 30.00,
+    category: categoryType.Jeans,
+  ),
+  const Product(
+    favoritePictureURL:
+        'https://images.unsplash.com/photo-1556301590-319c5b2ac83d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
+    productDescription: "These pants are tight!",
+    productId: 12,
+    productName: "Jimmy Fallon's Tight Pants",
+    productPictureURLs: [
+      'https://images.unsplash.com/photo-1556301590-319c5b2ac83d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
+    ],
+    productPrice: 17.00,
+    category: categoryType.Jeans,
+  ),
+  const Product(
+    favoritePictureURL:
+        'https://images.unsplash.com/photo-1511770378289-4217b08a434e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTd8fGplYW5zfGVufDB8fDB8&auto=format&fit=crop&w=800&q=60',
+    productDescription:
+        "Manufacturers basically only had enough fabric to make a pair of shorts but they made jeans anyway.",
+    productId: 13,
+    productName: "Holey Jeans",
+    productPictureURLs: [
+      'https://images.unsplash.com/photo-1511770378289-4217b08a434e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTd8fGplYW5zfGVufDB8fDB8&auto=format&fit=crop&w=800&q=60',
+    ],
+    productPrice: 55.00,
+    category: categoryType.Jeans,
+  ),
+  const Product(
+    favoritePictureURL:
+        'https://images.unsplash.com/photo-1562847198-622638acc04b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8OTN8fHBhbnRzfGVufDB8fDB8&auto=format&fit=crop&w=800&q=60',
+    productDescription: "These pants are great for staring into the abyss.",
+    productId: 0,
+    productName: "Blue Pants",
+    productPictureURLs: [
+      'https://images.unsplash.com/photo-1562847198-622638acc04b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8OTN8fHBhbnRzfGVufDB8fDB8&auto=format&fit=crop&w=800&q=60',
+    ],
+    productPrice: 14.00,
+    category: categoryType.Jeans,
   ),
 ];

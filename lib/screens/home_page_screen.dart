@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:shoppingApp/models/product.dart';
+import 'dart:math';
 
 import '../widgets/daily_favorite_widget.dart';
+import '../widgets/categorie_widget.dart';
+import '../DUMMY_DATA.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -11,28 +15,52 @@ class HomePage extends StatelessWidget {
         child: AppBar(
           leading: Icon(
             Icons.menu,
-            color: Colors.black,
+            color: Color.fromRGBO(216, 201, 155, 1),
           ),
-          title: Text(
-            'Shopping App',
-            style: TextStyle(
-              color: Colors.black,
+          title: RichText(
+            text: TextSpan(
+              text: "Cardigans ",
+              style: TextStyle(
+                fontFamily: 'Clicker Script',
+                fontSize: 32,
+                color: Color.fromRGBO(216, 151, 60, 1),
+                fontWeight: FontWeight.bold,
+              ),
+              children: [
+                TextSpan(
+                  text: "& ",
+                  style: TextStyle(
+                    color: Color.fromRGBO(164, 36, 59, 1),
+                  ),
+                ),
+                TextSpan(
+                  text: "Comfort",
+                )
+              ],
             ),
           ),
           centerTitle: true,
-          backgroundColor: Colors.white,
+          backgroundColor: Color.fromRGBO(39, 62, 71, 1),
           actions: <Widget>[
             Icon(
               Icons.shopping_cart,
-              color: Colors.black,
+              color: Color.fromRGBO(216, 201, 155, 1),
             )
           ],
         ),
       ),
-      body: Column(
-        children: [
-          DailyFavorite(3),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            DailyFavorite(Random().nextInt(DUMMY_PRODUCTS.length)),
+            SizedBox(height: 30),
+            CategoryWidget(categoryType.Dress),
+            SizedBox(height: 30),
+            CategoryWidget(categoryType.Jeans),
+            SizedBox(height: 30),
+            CategoryWidget(categoryType.TShirt),
+          ],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
