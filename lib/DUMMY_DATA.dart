@@ -205,4 +205,53 @@ const DUMMY_PRODUCTS = const [
     productPrice: 14.00,
     category: categoryType.Jeans,
   ),
+  const Product(
+    favoritePictureURL:
+        'https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTd8fHNob2VzfGVufDB8fDB8&auto=format&fit=crop&w=800&q=60',
+    productDescription: "Fancy Smancy Shoes!",
+    productId: 14,
+    productName: "Heels",
+    productPictureURLs: [
+      'https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTd8fHNob2VzfGVufDB8fDB8&auto=format&fit=crop&w=800&q=60',
+    ],
+    productPrice: 74.00,
+    category: categoryType.Shoes,
+  ),
+  const Product(
+    favoritePictureURL:
+        'https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80',
+    productDescription: "Great shoes if you want to be seen from the sun.",
+    productId: 15,
+    productName: "Red Shoes",
+    productPictureURLs: [
+      'https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80',
+    ],
+    productPrice: 35.00,
+    category: categoryType.Shoes,
+  ),
+  const Product(
+    favoritePictureURL:
+        'https://images.unsplash.com/photo-1531310197839-ccf54634509e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8c2hvZXN8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60',
+    productDescription:
+        "These shoes have heels so you can make all the dudes around you feel short.",
+    productId: 16,
+    productName: "Brown Shoes",
+    productPictureURLs: [
+      'https://images.unsplash.com/photo-1531310197839-ccf54634509e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8c2hvZXN8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60',
+    ],
+    productPrice: 23.00,
+    category: categoryType.Shoes,
+  ),
+  const Product(
+    favoritePictureURL:
+        'https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8c2hvZXN8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60',
+    productDescription: "Just Nikes....nothing special really.",
+    productId: 17,
+    productName: "Nikes",
+    productPictureURLs: [
+      'https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8c2hvZXN8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60',
+    ],
+    productPrice: 45.00,
+    category: categoryType.Shoes,
+  ),
 ];

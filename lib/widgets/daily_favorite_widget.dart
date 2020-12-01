@@ -20,8 +20,10 @@ class DailyFavorite extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            Color.fromRGBO(216, 201, 155, 1),
-            Color.fromRGBO(216, 201, 155, .5),
+            Color.fromRGBO(211, 211, 211, 1),
+            Color.fromRGBO(211, 211, 211, .5)
+            // Color.fromRGBO(216, 201, 155, 1),
+            // Color.fromRGBO(216, 201, 155, .5),
           ],
         ),
       ),
