@@ -25,7 +25,7 @@ class ProductCard extends StatelessWidget {
                 Radius.circular(20),
               ),
               child: Container(
-                width: 150,
+                width: 100,
                 height: double.infinity,
                 child: Image.network(
                   thisProduct.favoritePictureURL,

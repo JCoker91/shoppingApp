@@ -1,4 +1,35 @@
 import 'models/product.dart';
+import 'models/tag.dart';
+
+const DUMMY_TAGS = const [
+  const Tag(
+    tagId: 1,
+    tagLandScapePictureURL:
+        "https://images.unsplash.com/photo-1581056572149-8138dd610803?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTg5fHx3aW50ZXIlMjBjbG90aGluZ3xlbnwwfDB8MHw%3D&auto=format&fit=crop&w=500&q=60",
+    tagName: "Seasonal",
+  ),
+  const Tag(
+    tagId: 2,
+    tagLandScapePictureURL:
+        "https://images.unsplash.com/photo-1470309864661-68328b2cd0a5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoaW5nfGVufDB8MHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    tagName: "New Arrivals",
+  ),
+  const Tag(
+    tagId: 3,
+    tagLandScapePictureURL: null,
+    tagName: null,
+  ),
+  const Tag(
+    tagId: 4,
+    tagLandScapePictureURL: null,
+    tagName: null,
+  ),
+  const Tag(
+    tagId: 5,
+    tagLandScapePictureURL: null,
+    tagName: null,
+  ),
+];
 
 const DUMMY_PRODUCTS = const [
   const Product(

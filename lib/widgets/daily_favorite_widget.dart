@@ -1,3 +1,5 @@
+import 'dart:collection';
+
 import '../models/product.dart';
 
 import 'package:flutter/material.dart';
@@ -13,8 +15,19 @@ class DailyFavorite extends StatelessWidget {
       return product.productId == productId;
     });
     return Container(
-      color: Color.fromRGBO(216, 201, 155, 1),
-      padding: EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            Color.fromRGBO(216, 201, 155, 1),
+            Color.fromRGBO(216, 201, 155, .5),
+          ],
+        ),
+      ),
+
+      //Color.fromRGBO(216, 201, 155, 1),
+      padding: EdgeInsets.symmetric(vertical: 20, horizontal: 5),
       child: Column(
         children: [
           Text(

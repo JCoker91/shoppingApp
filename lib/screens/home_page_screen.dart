@@ -3,8 +3,9 @@ import 'package:shoppingApp/models/product.dart';
 import 'dart:math';
 
 import '../widgets/daily_favorite_widget.dart';
-import '../widgets/categorie_widget.dart';
+import '../widgets/category_section_widget.dart';
 import '../DUMMY_DATA.dart';
+import '../widgets/horizontal_card_widget.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -53,12 +54,22 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             DailyFavorite(Random().nextInt(DUMMY_PRODUCTS.length)),
+            HorizontalCard(DUMMY_TAGS[1]),
             SizedBox(height: 30),
             CategoryWidget(categoryType.Dress),
             SizedBox(height: 30),
             CategoryWidget(categoryType.Jeans),
             SizedBox(height: 30),
             CategoryWidget(categoryType.TShirt),
+            SizedBox(height: 30),
+            HorizontalCard(DUMMY_TAGS[0]),
+            SizedBox(height: 30),
+            CategoryWidget(categoryType.Dress),
+            SizedBox(height: 30),
+            CategoryWidget(categoryType.Jeans),
+            SizedBox(height: 30),
+            CategoryWidget(categoryType.TShirt),
+            SizedBox(height: 30),
           ],
         ),
       ),
