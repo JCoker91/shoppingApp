@@ -5,6 +5,8 @@ enum categoryType {
   Dress,
   Jeans,
   Shoes,
+  Jewelry,
+  Outerwear,
 }
 
 class Product {
@@ -29,4 +31,29 @@ class Product {
     this.productPrice,
     this.category,
   });
+
+  String get categoryTypeText {
+    switch (category) {
+      case categoryType.Dress:
+        return 'Dresses';
+        break;
+      case categoryType.Jeans:
+        return 'Jeans';
+        break;
+      case categoryType.Jewelry:
+        return 'Jewelry';
+        break;
+      case categoryType.Outerwear:
+        return 'Outerwear';
+        break;
+      case categoryType.Shoes:
+        return 'Shoes';
+        break;
+      case categoryType.TShirt:
+        return 'T-Shirts';
+        break;
+      default:
+        return 'Unknown';
+    }
+  }
 }

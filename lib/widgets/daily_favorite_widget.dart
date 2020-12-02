@@ -54,6 +54,7 @@ class DailyFavorite extends StatelessWidget {
               child: Row(
                 children: [
                   Container(
+                    height: 200,
                     width: 150,
                     child: ClipRRect(
                       borderRadius: BorderRadius.only(
