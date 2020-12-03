@@ -71,6 +71,8 @@ class ProductDetailsScreen extends StatelessWidget {
                     ),
                     color: Color.fromRGBO(100, 14, 39, 1),
                     onPressed: () {},
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)),
                   ),
                 ),
               ],
@@ -78,7 +80,7 @@ class ProductDetailsScreen extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: BottomNavBar(),
+      //bottomNavigationBar: BottomNavBar(),
     );
   }
 }
