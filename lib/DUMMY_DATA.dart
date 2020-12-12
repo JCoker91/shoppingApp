@@ -31,8 +31,8 @@ const DUMMY_TAGS = const [
   ),
 ];
 
-const DUMMY_PRODUCTS = const [
-  const Product(
+List<Product> DUMMY_PRODUCTS = [
+  Product(
     favoritePictureURL:
         'https://images.unsplash.com/photo-1554568218-0f1715e72254?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fGNsb3RoZXN8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60',
     productDescription: "A cool shirt to wear on your body.",
@@ -44,7 +44,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 25.00,
     category: categoryType.TShirt,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         'https://images.unsplash.com/photo-1572804013427-4d7ca7268217?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoZXN8ZW58MHwxfDB8&auto=format&fit=crop&w=500&q=60',
     productDescription: "A red dress with some other colors in it.",
@@ -56,7 +56,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 55.00,
     category: categoryType.Dress,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         'https://images.unsplash.com/photo-1503341504253-dff4815485f1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHwxfDB8&auto=format&fit=crop&w=500&q=60',
     productDescription: "A shirt with a boney hand doing the peace sign.",
@@ -68,7 +68,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 5.00,
     category: categoryType.TShirt,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         'https://images.unsplash.com/photo-1550639525-c97d455acf70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=734&q=8010',
     productDescription:
@@ -81,7 +81,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 70.00,
     category: categoryType.Dress,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         'https://images.unsplash.com/photo-1534534665817-8493579d3fde?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8ZHJlc3N8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60',
     productDescription:
@@ -94,7 +94,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 35.00,
     category: categoryType.Dress,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8ZHJlc3N8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60',
     productDescription: "This dress would be perfect for Speghetti night.",
@@ -106,7 +106,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 20.00,
     category: categoryType.Dress,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         'https://images.unsplash.com/photo-1576350591619-5f0841c6cab5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjN8fGRyZXNzfGVufDB8fDB8&auto=format&fit=crop&w=800&q=60',
     productDescription: "This dress looks like it could reflect the sun!",
@@ -118,7 +118,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 45.00,
     category: categoryType.Dress,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         'https://images.unsplash.com/photo-1583744946564-b52ac1c389c8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8dCUyMHNoaXJ0fGVufDB8fDB8&auto=format&fit=crop&w=800&q=60',
     productDescription:
@@ -131,7 +131,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 7.00,
     category: categoryType.TShirt,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         'https://images.unsplash.com/photo-1565907961206-11d705ede213?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fHQlMjBzaGlydHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=800&q=60',
     productDescription: "Made by sound guys, for sound guys.",
@@ -143,7 +143,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 4.00,
     category: categoryType.TShirt,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         'https://images.unsplash.com/photo-1578237421804-9674940e8b8e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fHRzaGlydHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=800&q=60',
     productDescription: "You must have 3+ tatoos to order this.",
@@ -155,7 +155,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 5.00,
     category: categoryType.TShirt,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8amVhbnN8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60',
     productDescription:
@@ -168,7 +168,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 30.00,
     category: categoryType.Jeans,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         'https://images.unsplash.com/photo-1556301590-319c5b2ac83d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
     productDescription: "These pants are tight!",
@@ -180,7 +180,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 17.00,
     category: categoryType.Jeans,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         'https://images.unsplash.com/photo-1511770378289-4217b08a434e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTd8fGplYW5zfGVufDB8fDB8&auto=format&fit=crop&w=800&q=60',
     productDescription:
@@ -193,7 +193,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 55.00,
     category: categoryType.Jeans,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         'https://images.unsplash.com/photo-1562847198-622638acc04b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8OTN8fHBhbnRzfGVufDB8fDB8&auto=format&fit=crop&w=800&q=60',
     productDescription: "These pants are great for staring into the abyss.",
@@ -205,7 +205,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 14.00,
     category: categoryType.Jeans,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         'https://images.unsplash.com/photo-1553545985-1e0d8781d5db?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8aGVlbHN8ZW58MHwxfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
     productDescription: "Fancy Smancy Shoes!",
@@ -217,7 +217,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 74.00,
     category: categoryType.Shoes,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         'https://images.unsplash.com/photo-1552474934-08de6c70e28b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8cmVkJTIwc2hvZXN8ZW58MHwxfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
     productDescription: "Great shoes if you want to be seen from the sun.",
@@ -229,7 +229,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 35.00,
     category: categoryType.Shoes,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         'https://images.unsplash.com/photo-1531310197839-ccf54634509e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8c2hvZXN8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60',
     productDescription:
@@ -242,7 +242,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 23.00,
     category: categoryType.Shoes,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         'https://images.unsplash.com/photo-1528669631894-8dbd0935e091?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDV8fG5pa2VzfGVufDB8MXwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
     productDescription: "Just Nikes....nothing special really.",
@@ -254,7 +254,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 45.00,
     category: categoryType.Shoes,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fGpld2Vscnl8ZW58MHwxfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     productDescription: "Jack died for this....now 30% off!",
@@ -266,7 +266,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 2400.00,
     category: categoryType.Jewelry,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         "https://images.unsplash.com/photo-1474585628895-4579822e21a8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fGpld2Vscnl8ZW58MHwxfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     productDescription:
@@ -279,7 +279,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 8.00,
     category: categoryType.Jewelry,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         "https://images.unsplash.com/photo-1600525990321-9b74f0b86cdc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTN8fGpld2Vscnl8ZW58MHwxfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     productDescription:
@@ -292,7 +292,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 160.00,
     category: categoryType.Jewelry,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         "https://images.unsplash.com/photo-1575862980254-f331e54623f4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OTJ8fGpld2Vscnl8ZW58MHwxfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     productDescription:
@@ -305,7 +305,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 32.00,
     category: categoryType.Jewelry,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         "https://images.unsplash.com/photo-1599586477491-f86db60c0c1c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA3fHxqZXdlbHJ5fGVufDB8MXwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     productDescription: "Only for the best doggos.",
@@ -317,7 +317,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 68.00,
     category: categoryType.Jewelry,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         "https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8amFja2V0fGVufDB8MXwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     productDescription: "Only for the rough and roughty.",
@@ -329,7 +329,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 76.00,
     category: categoryType.Outerwear,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         "https://images.unsplash.com/photo-1578964046312-69d266a3e739?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTd8fGphY2tldHxlbnwwfDF8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     productDescription: "Double your diameter with one simple trick!",
@@ -341,7 +341,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 40.00,
     category: categoryType.Outerwear,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         "https://images.unsplash.com/photo-1548567076-369a1137ada9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjh8fGphY2tldHxlbnwwfDF8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     productDescription: "Backpacks are sexy.",
@@ -353,7 +353,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 35.00,
     category: categoryType.Outerwear,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         "https://images.unsplash.com/photo-1595702419689-b64c73d36481?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDd8fGphY2tldHxlbnwwfDF8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     productDescription: "For those who want to wear pants on their arms.",
@@ -365,7 +365,7 @@ const DUMMY_PRODUCTS = const [
     productPrice: 22.00,
     category: categoryType.Outerwear,
   ),
-  const Product(
+  Product(
     favoritePictureURL:
         "https://images.unsplash.com/photo-1601762319935-963f5b1869ad?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTR8fHRyZW5jaCUyMGNvYXR8ZW58MHwxfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     productDescription:

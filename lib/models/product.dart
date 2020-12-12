@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+import '../DUMMY_DATA.dart';
 
 enum categoryType {
   TShirt,
@@ -17,12 +18,13 @@ class Product {
   final List<String> productPictureURLs;
   final double productPrice;
   final categoryType category;
+  bool isFavorite;
 
   int get id {
     return productId;
   }
 
-  const Product({
+  Product({
     this.favoritePictureURL,
     this.productDescription,
     this.productId,
@@ -30,6 +32,7 @@ class Product {
     this.productPictureURLs,
     this.productPrice,
     this.category,
+    this.isFavorite = false,
   });
 
   String get categoryTypeText {
@@ -55,5 +58,10 @@ class Product {
       default:
         return 'Unknown';
     }
+  }
+
+  void toggleFavorite(int id) {
+    Product product = DUMMY_PRODUCTS.firstWhere((prod) => prod.id == id);
+    product.isFavorite = !product.isFavorite;
   }
 }
